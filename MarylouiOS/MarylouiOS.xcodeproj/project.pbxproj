@@ -1,1218 +1,485 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0806D122551A8598D7EA9E9F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>24EA5C8EF7363AB91818EE58</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>256591561A8635E5006D4E22</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>256591611A8635E5006D4E22</string>
-				<string>2565917A1A8635E5006D4E22</string>
-				<string>256591601A8635E5006D4E22</string>
-				<string>E9FA03C0DC679163E324C400</string>
-				<string>92D44BE553DF8EA31FADAE80</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>256591571A8635E5006D4E22</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0610</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Franklin Schrans</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>2565915E1A8635E5006D4E22</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.1.1</string>
-					</dict>
-					<key>256591761A8635E5006D4E22</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.1.1</string>
-						<key>TestTargetID</key>
-						<string>2565915E1A8635E5006D4E22</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2565915A1A8635E5006D4E22</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>256591561A8635E5006D4E22</string>
-			<key>productRefGroup</key>
-			<string>256591601A8635E5006D4E22</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>2565915E1A8635E5006D4E22</string>
-				<string>256591761A8635E5006D4E22</string>
-			</array>
-		</dict>
-		<key>2565915A1A8635E5006D4E22</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>2565917F1A8635E5006D4E22</string>
-				<string>256591801A8635E5006D4E22</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>2565915B1A8635E5006D4E22</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>2565916A1A8635E5006D4E22</string>
-				<string>256591F01A86B64E006D4E22</string>
-				<string>256591E51A86526D006D4E22</string>
-				<string>256591651A8635E5006D4E22</string>
-				<string>256591EC1A8657C8006D4E22</string>
-				<string>256591681A8635E5006D4E22</string>
-				<string>256591EE1A866376006D4E22</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>2565915C1A8635E5006D4E22</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B781DF78E4E9EF9724B49DFF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>2565915D1A8635E5006D4E22</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>2565916D1A8635E5006D4E22</string>
-				<string>256591721A8635E5006D4E22</string>
-				<string>2565916F1A8635E5006D4E22</string>
-				<string>256591EA1A865706006D4E22</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>2565915E1A8635E5006D4E22</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>256591811A8635E5006D4E22</string>
-			<key>buildPhases</key>
-			<array>
-				<string>F4CCBBBAF4F7A73FC3469191</string>
-				<string>2565915B1A8635E5006D4E22</string>
-				<string>2565915C1A8635E5006D4E22</string>
-				<string>2565915D1A8635E5006D4E22</string>
-				<string>5F5FDE642CD0A117256603DC</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>MarylouiOS</string>
-			<key>productName</key>
-			<string>MarylouiOS</string>
-			<key>productReference</key>
-			<string>2565915F1A8635E5006D4E22</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>2565915F1A8635E5006D4E22</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>MarylouiOS.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>256591601A8635E5006D4E22</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2565915F1A8635E5006D4E22</string>
-				<string>256591771A8635E5006D4E22</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>256591611A8635E5006D4E22</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>256591E81A8656FA006D4E22</string>
-				<string>256591E71A865280006D4E22</string>
-				<string>256591E61A865275006D4E22</string>
-				<string>256591641A8635E5006D4E22</string>
-				<string>2565916B1A8635E5006D4E22</string>
-				<string>256591EF1A86B64E006D4E22</string>
-				<string>2565916E1A8635E5006D4E22</string>
-				<string>256591701A8635E5006D4E22</string>
-				<string>256591661A8635E5006D4E22</string>
-				<string>256591621A8635E5006D4E22</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>MarylouiOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>256591621A8635E5006D4E22</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>256591631A8635E5006D4E22</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>256591631A8635E5006D4E22</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>256591641A8635E5006D4E22</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>256591651A8635E5006D4E22</key>
-		<dict>
-			<key>fileRef</key>
-			<string>256591641A8635E5006D4E22</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>256591661A8635E5006D4E22</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>256591671A8635E5006D4E22</string>
-			</array>
-			<key>currentVersion</key>
-			<string>256591671A8635E5006D4E22</string>
-			<key>isa</key>
-			<string>XCVersionGroup</string>
-			<key>path</key>
-			<string>MarylouiOS.xcdatamodeld</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-			<key>versionGroupType</key>
-			<string>wrapper.xcdatamodel</string>
-		</dict>
-		<key>256591671A8635E5006D4E22</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.xcdatamodel</string>
-			<key>path</key>
-			<string>MarylouiOS.xcdatamodel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>256591681A8635E5006D4E22</key>
-		<dict>
-			<key>fileRef</key>
-			<string>256591661A8635E5006D4E22</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>256591691A8635E5006D4E22</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>HomeViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2565916A1A8635E5006D4E22</key>
-		<dict>
-			<key>fileRef</key>
-			<string>256591691A8635E5006D4E22</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2565916B1A8635E5006D4E22</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2565916C1A8635E5006D4E22</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2565916C1A8635E5006D4E22</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2565916D1A8635E5006D4E22</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2565916B1A8635E5006D4E22</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2565916E1A8635E5006D4E22</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2565916F1A8635E5006D4E22</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2565916E1A8635E5006D4E22</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>256591701A8635E5006D4E22</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>256591711A8635E5006D4E22</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>256591711A8635E5006D4E22</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>256591721A8635E5006D4E22</key>
-		<dict>
-			<key>fileRef</key>
-			<string>256591701A8635E5006D4E22</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>256591731A8635E5006D4E22</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>2565917E1A8635E5006D4E22</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>256591741A8635E5006D4E22</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>DB02DB62F5E864390A6901E6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>256591751A8635E5006D4E22</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>256591761A8635E5006D4E22</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>256591841A8635E5006D4E22</string>
-			<key>buildPhases</key>
-			<array>
-				<string>EF2DA44056B2EA6B164A4661</string>
-				<string>256591731A8635E5006D4E22</string>
-				<string>256591741A8635E5006D4E22</string>
-				<string>256591751A8635E5006D4E22</string>
-				<string>8C3BB312863E57D18CBFFCC3</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>256591791A8635E5006D4E22</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>MarylouiOSTests</string>
-			<key>productName</key>
-			<string>MarylouiOSTests</string>
-			<key>productReference</key>
-			<string>256591771A8635E5006D4E22</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>256591771A8635E5006D4E22</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>MarylouiOSTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>256591781A8635E5006D4E22</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>256591571A8635E5006D4E22</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>2565915E1A8635E5006D4E22</string>
-			<key>remoteInfo</key>
-			<string>MarylouiOS</string>
-		</dict>
-		<key>256591791A8635E5006D4E22</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>2565915E1A8635E5006D4E22</string>
-			<key>targetProxy</key>
-			<string>256591781A8635E5006D4E22</string>
-		</dict>
-		<key>2565917A1A8635E5006D4E22</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2565917D1A8635E5006D4E22</string>
-				<string>2565917B1A8635E5006D4E22</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>MarylouiOSTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2565917B1A8635E5006D4E22</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2565917C1A8635E5006D4E22</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2565917C1A8635E5006D4E22</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2565917D1A8635E5006D4E22</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MarylouiOSTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2565917E1A8635E5006D4E22</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2565917D1A8635E5006D4E22</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2565917F1A8635E5006D4E22</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>256591801A8635E5006D4E22</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>256591811A8635E5006D4E22</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>256591821A8635E5006D4E22</string>
-				<string>256591831A8635E5006D4E22</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>256591821A8635E5006D4E22</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>24EA5C8EF7363AB91818EE58</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>MarylouiOS/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>256591831A8635E5006D4E22</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0806D122551A8598D7EA9E9F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>MarylouiOS/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>256591841A8635E5006D4E22</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>256591851A8635E5006D4E22</string>
-				<string>256591861A8635E5006D4E22</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>256591851A8635E5006D4E22</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>68AE04112DB681A2F310B844</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>MarylouiOSTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/MarylouiOS.app/MarylouiOS</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>256591861A8635E5006D4E22</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>611D91520CF717DF1FC0A637</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>MarylouiOSTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/MarylouiOS.app/MarylouiOS</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>256591E41A86526D006D4E22</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>DataManager.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>256591E51A86526D006D4E22</key>
-		<dict>
-			<key>fileRef</key>
-			<string>256591E41A86526D006D4E22</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>256591E61A865275006D4E22</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>256591691A8635E5006D4E22</string>
-				<string>256591ED1A866376006D4E22</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Views</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>256591E71A865280006D4E22</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>256591E41A86526D006D4E22</string>
-				<string>256591EB1A8657C8006D4E22</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>DataManagement</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>256591E81A8656FA006D4E22</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>256591E91A865706006D4E22</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ExampleData</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>256591E91A865706006D4E22</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.json</string>
-			<key>path</key>
-			<string>SampleData.json</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>256591EA1A865706006D4E22</key>
-		<dict>
-			<key>fileRef</key>
-			<string>256591E91A865706006D4E22</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>256591EB1A8657C8006D4E22</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>SwiftyJSON.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>256591EC1A8657C8006D4E22</key>
-		<dict>
-			<key>fileRef</key>
-			<string>256591EB1A8657C8006D4E22</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>256591ED1A866376006D4E22</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ResultsViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>256591EE1A866376006D4E22</key>
-		<dict>
-			<key>fileRef</key>
-			<string>256591ED1A866376006D4E22</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>256591EF1A86B64E006D4E22</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>TableViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>256591F01A86B64E006D4E22</key>
-		<dict>
-			<key>fileRef</key>
-			<string>256591EF1A86B64E006D4E22</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5F5FDE642CD0A117256603DC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>611D91520CF717DF1FC0A637</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-MarylouiOSTests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-MarylouiOSTests/Pods-MarylouiOSTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>68AE04112DB681A2F310B844</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-MarylouiOSTests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-MarylouiOSTests/Pods-MarylouiOSTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7DB17946E5CDA2DE851458B7</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-MarylouiOSTests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>8C3BB312863E57D18CBFFCC3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-MarylouiOSTests/Pods-MarylouiOSTests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>92D44BE553DF8EA31FADAE80</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CF90253341BC1BC8BF96011C</string>
-				<string>7DB17946E5CDA2DE851458B7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B781DF78E4E9EF9724B49DFF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CF90253341BC1BC8BF96011C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CF90253341BC1BC8BF96011C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>DB02DB62F5E864390A6901E6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7DB17946E5CDA2DE851458B7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E9FA03C0DC679163E324C400</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>24EA5C8EF7363AB91818EE58</string>
-				<string>0806D122551A8598D7EA9E9F</string>
-				<string>68AE04112DB681A2F310B844</string>
-				<string>611D91520CF717DF1FC0A637</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EF2DA44056B2EA6B164A4661</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>F4CCBBBAF4F7A73FC3469191</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>256591571A8635E5006D4E22</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		256591651A8635E5006D4E22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256591641A8635E5006D4E22 /* AppDelegate.swift */; };
+		256591681A8635E5006D4E22 /* MarylouiOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 256591661A8635E5006D4E22 /* MarylouiOS.xcdatamodeld */; };
+		2565916A1A8635E5006D4E22 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256591691A8635E5006D4E22 /* HomeViewController.swift */; };
+		2565916D1A8635E5006D4E22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2565916B1A8635E5006D4E22 /* Main.storyboard */; };
+		2565916F1A8635E5006D4E22 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2565916E1A8635E5006D4E22 /* Images.xcassets */; };
+		256591721A8635E5006D4E22 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 256591701A8635E5006D4E22 /* LaunchScreen.xib */; };
+		2565917E1A8635E5006D4E22 /* MarylouiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565917D1A8635E5006D4E22 /* MarylouiOSTests.swift */; };
+		256591E51A86526D006D4E22 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256591E41A86526D006D4E22 /* DataManager.swift */; };
+		256591EA1A865706006D4E22 /* SampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = 256591E91A865706006D4E22 /* SampleData.json */; };
+		256591EC1A8657C8006D4E22 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256591EB1A8657C8006D4E22 /* SwiftyJSON.swift */; };
+		256591EE1A866376006D4E22 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256591ED1A866376006D4E22 /* ResultsViewController.swift */; };
+		256591F01A86B64E006D4E22 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256591EF1A86B64E006D4E22 /* TableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		256591781A8635E5006D4E22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 256591571A8635E5006D4E22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2565915E1A8635E5006D4E22;
+			remoteInfo = MarylouiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2565915F1A8635E5006D4E22 /* MarylouiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarylouiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		256591631A8635E5006D4E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		256591641A8635E5006D4E22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		256591671A8635E5006D4E22 /* MarylouiOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarylouiOS.xcdatamodel; sourceTree = "<group>"; };
+		256591691A8635E5006D4E22 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2565916C1A8635E5006D4E22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2565916E1A8635E5006D4E22 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		256591711A8635E5006D4E22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		256591771A8635E5006D4E22 /* MarylouiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarylouiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2565917C1A8635E5006D4E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2565917D1A8635E5006D4E22 /* MarylouiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarylouiOSTests.swift; sourceTree = "<group>"; };
+		256591E41A86526D006D4E22 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		256591E91A865706006D4E22 /* SampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleData.json; sourceTree = "<group>"; };
+		256591EB1A8657C8006D4E22 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		256591ED1A866376006D4E22 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		256591EF1A86B64E006D4E22 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2565915C1A8635E5006D4E22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256591741A8635E5006D4E22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		256591561A8635E5006D4E22 = {
+			isa = PBXGroup;
+			children = (
+				256591611A8635E5006D4E22 /* MarylouiOS */,
+				2565917A1A8635E5006D4E22 /* MarylouiOSTests */,
+				256591601A8635E5006D4E22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		256591601A8635E5006D4E22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2565915F1A8635E5006D4E22 /* MarylouiOS.app */,
+				256591771A8635E5006D4E22 /* MarylouiOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		256591611A8635E5006D4E22 /* MarylouiOS */ = {
+			isa = PBXGroup;
+			children = (
+				256591E81A8656FA006D4E22 /* ExampleData */,
+				256591E71A865280006D4E22 /* DataManagement */,
+				256591E61A865275006D4E22 /* Views */,
+				256591641A8635E5006D4E22 /* AppDelegate.swift */,
+				2565916B1A8635E5006D4E22 /* Main.storyboard */,
+				256591EF1A86B64E006D4E22 /* TableViewController.swift */,
+				2565916E1A8635E5006D4E22 /* Images.xcassets */,
+				256591701A8635E5006D4E22 /* LaunchScreen.xib */,
+				256591661A8635E5006D4E22 /* MarylouiOS.xcdatamodeld */,
+				256591621A8635E5006D4E22 /* Supporting Files */,
+			);
+			path = MarylouiOS;
+			sourceTree = "<group>";
+		};
+		256591621A8635E5006D4E22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				256591631A8635E5006D4E22 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2565917A1A8635E5006D4E22 /* MarylouiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				2565917D1A8635E5006D4E22 /* MarylouiOSTests.swift */,
+				2565917B1A8635E5006D4E22 /* Supporting Files */,
+			);
+			path = MarylouiOSTests;
+			sourceTree = "<group>";
+		};
+		2565917B1A8635E5006D4E22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2565917C1A8635E5006D4E22 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		256591E61A865275006D4E22 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				256591691A8635E5006D4E22 /* HomeViewController.swift */,
+				256591ED1A866376006D4E22 /* ResultsViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		256591E71A865280006D4E22 /* DataManagement */ = {
+			isa = PBXGroup;
+			children = (
+				256591E41A86526D006D4E22 /* DataManager.swift */,
+				256591EB1A8657C8006D4E22 /* SwiftyJSON.swift */,
+			);
+			name = DataManagement;
+			sourceTree = "<group>";
+		};
+		256591E81A8656FA006D4E22 /* ExampleData */ = {
+			isa = PBXGroup;
+			children = (
+				256591E91A865706006D4E22 /* SampleData.json */,
+			);
+			name = ExampleData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2565915E1A8635E5006D4E22 /* MarylouiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 256591811A8635E5006D4E22 /* Build configuration list for PBXNativeTarget "MarylouiOS" */;
+			buildPhases = (
+				2565915B1A8635E5006D4E22 /* Sources */,
+				2565915C1A8635E5006D4E22 /* Frameworks */,
+				2565915D1A8635E5006D4E22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarylouiOS;
+			productName = MarylouiOS;
+			productReference = 2565915F1A8635E5006D4E22 /* MarylouiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		256591761A8635E5006D4E22 /* MarylouiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 256591841A8635E5006D4E22 /* Build configuration list for PBXNativeTarget "MarylouiOSTests" */;
+			buildPhases = (
+				256591731A8635E5006D4E22 /* Sources */,
+				256591741A8635E5006D4E22 /* Frameworks */,
+				256591751A8635E5006D4E22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				256591791A8635E5006D4E22 /* PBXTargetDependency */,
+			);
+			name = MarylouiOSTests;
+			productName = MarylouiOSTests;
+			productReference = 256591771A8635E5006D4E22 /* MarylouiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		256591571A8635E5006D4E22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Franklin Schrans";
+				TargetAttributes = {
+					2565915E1A8635E5006D4E22 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					256591761A8635E5006D4E22 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 2565915E1A8635E5006D4E22;
+					};
+				};
+			};
+			buildConfigurationList = 2565915A1A8635E5006D4E22 /* Build configuration list for PBXProject "MarylouiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 256591561A8635E5006D4E22;
+			productRefGroup = 256591601A8635E5006D4E22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2565915E1A8635E5006D4E22 /* MarylouiOS */,
+				256591761A8635E5006D4E22 /* MarylouiOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2565915D1A8635E5006D4E22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2565916D1A8635E5006D4E22 /* Main.storyboard in Resources */,
+				256591721A8635E5006D4E22 /* LaunchScreen.xib in Resources */,
+				2565916F1A8635E5006D4E22 /* Images.xcassets in Resources */,
+				256591EA1A865706006D4E22 /* SampleData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256591751A8635E5006D4E22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2565915B1A8635E5006D4E22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2565916A1A8635E5006D4E22 /* HomeViewController.swift in Sources */,
+				256591F01A86B64E006D4E22 /* TableViewController.swift in Sources */,
+				256591E51A86526D006D4E22 /* DataManager.swift in Sources */,
+				256591651A8635E5006D4E22 /* AppDelegate.swift in Sources */,
+				256591EC1A8657C8006D4E22 /* SwiftyJSON.swift in Sources */,
+				256591681A8635E5006D4E22 /* MarylouiOS.xcdatamodeld in Sources */,
+				256591EE1A866376006D4E22 /* ResultsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256591731A8635E5006D4E22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2565917E1A8635E5006D4E22 /* MarylouiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		256591791A8635E5006D4E22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2565915E1A8635E5006D4E22 /* MarylouiOS */;
+			targetProxy = 256591781A8635E5006D4E22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2565916B1A8635E5006D4E22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2565916C1A8635E5006D4E22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		256591701A8635E5006D4E22 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				256591711A8635E5006D4E22 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2565917F1A8635E5006D4E22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		256591801A8635E5006D4E22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		256591821A8635E5006D4E22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MarylouiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		256591831A8635E5006D4E22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MarylouiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		256591851A8635E5006D4E22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MarylouiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarylouiOS.app/MarylouiOS";
+			};
+			name = Debug;
+		};
+		256591861A8635E5006D4E22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MarylouiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarylouiOS.app/MarylouiOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2565915A1A8635E5006D4E22 /* Build configuration list for PBXProject "MarylouiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2565917F1A8635E5006D4E22 /* Debug */,
+				256591801A8635E5006D4E22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		256591811A8635E5006D4E22 /* Build configuration list for PBXNativeTarget "MarylouiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256591821A8635E5006D4E22 /* Debug */,
+				256591831A8635E5006D4E22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		256591841A8635E5006D4E22 /* Build configuration list for PBXNativeTarget "MarylouiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256591851A8635E5006D4E22 /* Debug */,
+				256591861A8635E5006D4E22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		256591661A8635E5006D4E22 /* MarylouiOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				256591671A8635E5006D4E22 /* MarylouiOS.xcdatamodel */,
+			);
+			currentVersion = 256591671A8635E5006D4E22 /* MarylouiOS.xcdatamodel */;
+			path = MarylouiOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 256591571A8635E5006D4E22 /* Project object */;
+}
