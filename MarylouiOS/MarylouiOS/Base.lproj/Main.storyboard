@@ -107,29 +107,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="FaV-pb-1R3">
-                                <rect key="frame" x="0.0" y="302" width="600" height="298"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qJ0-HR-TXt">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="280"/>
                             </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mtJ-on-dSx">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="G3m-hk-x9f">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G3m-hk-x9f" id="gZE-sC-IB6">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="qJ0-HR-TXt" secondAttribute="trailing" id="1Qv-JV-9Dr"/>
-                            <constraint firstItem="qJ0-HR-TXt" firstAttribute="top" secondItem="AYC-nr-evr" secondAttribute="top" id="AC4-hA-EZ4"/>
-                            <constraint firstItem="FaV-pb-1R3" firstAttribute="top" secondItem="qJ0-HR-TXt" secondAttribute="bottom" constant="2" id="HhJ-R6-5k7"/>
+                            <constraint firstItem="mtJ-on-dSx" firstAttribute="top" secondItem="qJ0-HR-TXt" secondAttribute="bottom" id="1pk-FL-mn4"/>
+                            <constraint firstItem="qJ0-HR-TXt" firstAttribute="top" secondItem="AYC-nr-evr" secondAttribute="top" constant="20" id="AC4-hA-EZ4"/>
                             <constraint firstItem="qJ0-HR-TXt" firstAttribute="bottom" secondItem="hJr-Xx-MEh" secondAttribute="top" constant="-300" id="TnT-mr-qFH"/>
-                            <constraint firstItem="FaV-pb-1R3" firstAttribute="bottom" secondItem="hJr-Xx-MEh" secondAttribute="top" id="ZRG-SU-Mhv"/>
                             <constraint firstItem="qJ0-HR-TXt" firstAttribute="leading" secondItem="AYC-nr-evr" secondAttribute="leading" id="hOF-3t-N3d"/>
-                            <constraint firstItem="FaV-pb-1R3" firstAttribute="trailing" secondItem="qJ0-HR-TXt" secondAttribute="trailing" id="ow8-1m-saI"/>
-                            <constraint firstItem="FaV-pb-1R3" firstAttribute="leading" secondItem="qJ0-HR-TXt" secondAttribute="leading" id="sYh-Ya-lcQ"/>
+                            <constraint firstItem="mtJ-on-dSx" firstAttribute="bottom" secondItem="hJr-Xx-MEh" secondAttribute="top" id="q6g-0k-MtE"/>
+                            <constraint firstItem="mtJ-on-dSx" firstAttribute="trailing" secondItem="qJ0-HR-TXt" secondAttribute="trailing" id="xCn-CO-Cdo"/>
+                            <constraint firstItem="mtJ-on-dSx" firstAttribute="leading" secondItem="qJ0-HR-TXt" secondAttribute="leading" id="xGj-QB-aVr"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="qJ0-HR-TXt" id="Pid-yg-QFr"/>
-                        <outlet property="resultsTable" destination="FaV-pb-1R3" id="TNm-a9-ztR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgD-be-BFN" userLabel="First Responder" sceneMemberID="firstResponder"/>

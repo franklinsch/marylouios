@@ -31,6 +31,12 @@ class ViewController: UIViewController {
         dispatch_after(delayTime, dispatch_get_main_queue()){
             println("Got cities : \(self.resultCities)")
             println("Got geolocs : \(self.resultGeoLocs)")
+            
+            NSUserDefaults.standardUserDefaults().setObject(self.resultCities, forKey:"cities")
+            NSUserDefaults.standardUserDefaults().setObject(self.resultGeoLocs, forKey:"geolocs")
+
+            NSUserDefaults.standardUserDefaults().synchronize()
+            
         }
     }
     
