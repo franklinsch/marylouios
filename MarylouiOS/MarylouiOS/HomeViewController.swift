@@ -9,35 +9,43 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     @IBOutlet weak var safetyField: UITextField!
     @IBOutlet weak var priceField: UITextField!
     @IBOutlet weak var weatherField: UITextField!
     
     @IBOutlet weak var resultLabel: UILabel!
     
+    var resultCities : Array<String!> = []
+    var resultGeoLocs : Array<String!> = []
+
+    @IBOutlet weak var safetyView: UIView!
+    
     @IBAction func search(sender: AnyObject) {
         var values : NSArray = [safetyField.text, priceField.text, weatherField.text]
+        
+        println("Getting cities with values \(values)")
         
         getResultsFromServerWithValues(values)
         
         let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC * 1))
         dispatch_after(delayTime, dispatch_get_main_queue()){
-            println(self.results)
+            println("Got cities : \(self.resultCities)")
+            println("Got geolocs : \(self.resultGeoLocs)")
         }
-        
-        
     }
     
-    var results : Array<String!> = []
 
     func getResultsFromServerWithValues(NSArray) {
-        DataManager.getDataFromServerWithSuccess { (iTunesData) -> Void in
-            let json = JSON(data: iTunesData)
-            
-            
-            if let appName = json["city1"]["name"].stringValue as String? {
-                self.results.append(appName)
+        DataManager.getDataFromServerWithSuccess { (ServerData) -> Void in
+            let json = JSON(data: ServerData)
+            for (key: String, subJson: JSON) in json {
+                if let appName = json[key.toInt()!]["name"].stringValue as String? {
+                    self.resultCities.append(appName)
+                }
+                
+                if let appName = json[key.toInt()!]["geo"].stringValue as String? {
+                    self.resultGeoLocs.append(appName)
+                }
             }
         }
     }
@@ -45,6 +53,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
     }
     
     override func didReceiveMemoryWarning() {
