@@ -18,8 +18,19 @@ class ViewController: UIViewController {
     
     @IBAction func search(sender: AnyObject) {
     
-        var values : Array<String!> = [safetyField.text, priceField.text, weatherField.text]
-    
+        var values : NSArray = [safetyField.text, priceField.text, weatherField.text]
+        
+        var results : Array<String!> = []
+        
+        DataManager.getTopAppsDataFromFileWithSuccess { (data) -> Void in
+            let json = JSON(data: data)
+            //print(json);
+            if let topResult = json["city1"]["name1"].stringValue as String? {
+                print(topResult)
+                results.append(topResult);
+            }
+        }
+        
     }
     
     override func viewDidLoad() {
@@ -32,5 +43,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+
 }
 
