@@ -9,7 +9,7 @@
 
 import Foundation
 
-let TopAppURL = "http://date.jsontest.com"
+let TopAppURL = "http://www.freddielindsey.me:3000/getcities"
 
 class DataManager {
     
@@ -48,15 +48,14 @@ class DataManager {
         loadDataTask.resume()
     }
     
-    class func getTopAppsDataFromItunesWithSuccess(success: ((iTunesData: NSData!) -> Void)) {
-        //1
+    class func getDataFromServerWithSuccess(success: ((ServerData: NSData!) -> Void)) {
         loadDataFromURL(NSURL(string: TopAppURL)!, completion:{(data, error) -> Void in
-            //2
             if let urlData = data {
-                //3
-                success(iTunesData: urlData)
+                success(ServerData: urlData)
             }
         })
     }
+    
+    
     
 }

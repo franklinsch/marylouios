@@ -12,6 +12,7 @@ import MapKit
 class ResultsViewController : UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var resultsTable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

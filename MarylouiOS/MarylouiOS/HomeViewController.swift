@@ -17,20 +17,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     
     @IBAction func search(sender: AnyObject) {
-    
         var values : NSArray = [safetyField.text, priceField.text, weatherField.text]
         
-        var results : Array<String!> = []
+        getResultsFromServerWithValues(values)
         
-        DataManager.getTopAppsDataFromFileWithSuccess { (data) -> Void in
-            let json = JSON(data: data)
-            //print(json);
-            if let topResult = json["city1"]["name1"].stringValue as String? {
-                print(topResult)
-                results.append(topResult);
-            }
+        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC * 1))
+        dispatch_after(delayTime, dispatch_get_main_queue()){
+            println(self.results)
         }
         
+        
+    }
+    
+    var results : Array<String!> = []
+
+    func getResultsFromServerWithValues(NSArray) {
+        DataManager.getDataFromServerWithSuccess { (iTunesData) -> Void in
+            let json = JSON(data: iTunesData)
+            
+            
+            if let appName = json["city1"]["name"].stringValue as String? {
+                self.results.append(appName)
+            }
+        }
     }
     
     override func viewDidLoad() {

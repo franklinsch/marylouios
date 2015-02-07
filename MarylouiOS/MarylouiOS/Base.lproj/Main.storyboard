@@ -96,19 +96,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qJ0-HR-TXt">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                             </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="FaV-pb-1R3">
+                                <rect key="frame" x="0.0" y="302" width="600" height="298"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="qJ0-HR-TXt" secondAttribute="trailing" id="1Qv-JV-9Dr"/>
                             <constraint firstItem="qJ0-HR-TXt" firstAttribute="top" secondItem="AYC-nr-evr" secondAttribute="top" id="AC4-hA-EZ4"/>
-                            <constraint firstItem="qJ0-HR-TXt" firstAttribute="bottom" secondItem="hJr-Xx-MEh" secondAttribute="top" id="TnT-mr-qFH"/>
+                            <constraint firstItem="FaV-pb-1R3" firstAttribute="top" secondItem="qJ0-HR-TXt" secondAttribute="bottom" constant="2" id="HhJ-R6-5k7"/>
+                            <constraint firstItem="qJ0-HR-TXt" firstAttribute="bottom" secondItem="hJr-Xx-MEh" secondAttribute="top" constant="-300" id="TnT-mr-qFH"/>
+                            <constraint firstItem="FaV-pb-1R3" firstAttribute="bottom" secondItem="hJr-Xx-MEh" secondAttribute="top" id="ZRG-SU-Mhv"/>
                             <constraint firstItem="qJ0-HR-TXt" firstAttribute="leading" secondItem="AYC-nr-evr" secondAttribute="leading" id="hOF-3t-N3d"/>
+                            <constraint firstItem="FaV-pb-1R3" firstAttribute="trailing" secondItem="qJ0-HR-TXt" secondAttribute="trailing" id="ow8-1m-saI"/>
+                            <constraint firstItem="FaV-pb-1R3" firstAttribute="leading" secondItem="qJ0-HR-TXt" secondAttribute="leading" id="sYh-Ya-lcQ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="qJ0-HR-TXt" id="Pid-yg-QFr"/>
+                        <outlet property="resultsTable" destination="FaV-pb-1R3" id="TNm-a9-ztR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgD-be-BFN" userLabel="First Responder" sceneMemberID="firstResponder"/>
