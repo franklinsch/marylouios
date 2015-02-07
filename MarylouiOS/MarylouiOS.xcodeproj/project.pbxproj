@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		256591651A8635E5006D4E22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256591641A8635E5006D4E22 /* AppDelegate.swift */; };
 		256591681A8635E5006D4E22 /* MarylouiOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 256591661A8635E5006D4E22 /* MarylouiOS.xcdatamodeld */; };
-		2565916A1A8635E5006D4E22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256591691A8635E5006D4E22 /* ViewController.swift */; };
+		2565916A1A8635E5006D4E22 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256591691A8635E5006D4E22 /* HomeViewController.swift */; };
 		2565916D1A8635E5006D4E22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2565916B1A8635E5006D4E22 /* Main.storyboard */; };
 		2565916F1A8635E5006D4E22 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2565916E1A8635E5006D4E22 /* Images.xcassets */; };
 		256591721A8635E5006D4E22 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 256591701A8635E5006D4E22 /* LaunchScreen.xib */; };
 		2565917E1A8635E5006D4E22 /* MarylouiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565917D1A8635E5006D4E22 /* MarylouiOSTests.swift */; };
+		256591E51A86526D006D4E22 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256591E41A86526D006D4E22 /* DataManager.swift */; };
+		256591EA1A865706006D4E22 /* SampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = 256591E91A865706006D4E22 /* SampleData.json */; };
+		256591EC1A8657C8006D4E22 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256591EB1A8657C8006D4E22 /* SwiftyJSON.swift */; };
+		256591EE1A866376006D4E22 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256591ED1A866376006D4E22 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +35,17 @@
 		256591631A8635E5006D4E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		256591641A8635E5006D4E22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		256591671A8635E5006D4E22 /* MarylouiOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarylouiOS.xcdatamodel; sourceTree = "<group>"; };
-		256591691A8635E5006D4E22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		256591691A8635E5006D4E22 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2565916C1A8635E5006D4E22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2565916E1A8635E5006D4E22 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		256591711A8635E5006D4E22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		256591771A8635E5006D4E22 /* MarylouiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarylouiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2565917C1A8635E5006D4E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2565917D1A8635E5006D4E22 /* MarylouiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarylouiOSTests.swift; sourceTree = "<group>"; };
+		256591E41A86526D006D4E22 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		256591E91A865706006D4E22 /* SampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleData.json; sourceTree = "<group>"; };
+		256591EB1A8657C8006D4E22 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		256591ED1A866376006D4E22 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +87,10 @@
 		256591611A8635E5006D4E22 /* MarylouiOS */ = {
 			isa = PBXGroup;
 			children = (
+				256591E81A8656FA006D4E22 /* ExampleData */,
+				256591E71A865280006D4E22 /* DataManagement */,
+				256591E61A865275006D4E22 /* Views */,
 				256591641A8635E5006D4E22 /* AppDelegate.swift */,
-				256591691A8635E5006D4E22 /* ViewController.swift */,
 				2565916B1A8635E5006D4E22 /* Main.storyboard */,
 				2565916E1A8635E5006D4E22 /* Images.xcassets */,
 				256591701A8635E5006D4E22 /* LaunchScreen.xib */,
@@ -113,6 +123,32 @@
 				2565917C1A8635E5006D4E22 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		256591E61A865275006D4E22 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				256591691A8635E5006D4E22 /* HomeViewController.swift */,
+				256591ED1A866376006D4E22 /* ResultsViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		256591E71A865280006D4E22 /* DataManagement */ = {
+			isa = PBXGroup;
+			children = (
+				256591E41A86526D006D4E22 /* DataManager.swift */,
+				256591EB1A8657C8006D4E22 /* SwiftyJSON.swift */,
+			);
+			name = DataManagement;
+			sourceTree = "<group>";
+		};
+		256591E81A8656FA006D4E22 /* ExampleData */ = {
+			isa = PBXGroup;
+			children = (
+				256591E91A865706006D4E22 /* SampleData.json */,
+			);
+			name = ExampleData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +234,7 @@
 				2565916D1A8635E5006D4E22 /* Main.storyboard in Resources */,
 				256591721A8635E5006D4E22 /* LaunchScreen.xib in Resources */,
 				2565916F1A8635E5006D4E22 /* Images.xcassets in Resources */,
+				256591EA1A865706006D4E22 /* SampleData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,9 +252,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2565916A1A8635E5006D4E22 /* ViewController.swift in Sources */,
+				2565916A1A8635E5006D4E22 /* HomeViewController.swift in Sources */,
+				256591E51A86526D006D4E22 /* DataManager.swift in Sources */,
 				256591651A8635E5006D4E22 /* AppDelegate.swift in Sources */,
+				256591EC1A8657C8006D4E22 /* SwiftyJSON.swift in Sources */,
 				256591681A8635E5006D4E22 /* MarylouiOS.xcdatamodeld in Sources */,
+				256591EE1A866376006D4E22 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +451,7 @@
 				256591831A8635E5006D4E22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		256591841A8635E5006D4E22 /* Build configuration list for PBXNativeTarget "MarylouiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +460,7 @@
 				256591861A8635E5006D4E22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
