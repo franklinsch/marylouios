@@ -23,27 +23,15 @@ class ViewController: UIViewController {
     @IBAction func search(sender: AnyObject) {
         var values : NSArray = [safetyField.text, priceField.text, weatherField.text]
         
-        println("Getting cities with values \(values)")
+        //println("Getting cities with values \(values)")
         
-       // doHTTPPost()
+        // doHTTPPost()
         
         getResultsFromServerWithValues(values)
-        
 
-        
-        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC * 1))
-        dispatch_after(delayTime, dispatch_get_main_queue()){
-            println("Got cities : \(self.resultCities)")
-            println("Got geolocs : \(self.resultGeoLocs)")
-            
-            NSUserDefaults.standardUserDefaults().setObject(self.resultCities, forKey:"cities")
-            NSUserDefaults.standardUserDefaults().setObject(self.resultGeoLocs, forKey:"geolocs")
-            NSUserDefaults.standardUserDefaults().synchronize()
-            
-        }
+        //getResultsFromFileWithValues(values)
     }
     
-
     func doHTTPPost() {
         var request = NSMutableURLRequest(URL: NSURL(string: "http://www.freddielindsey.me:3000/testjson")!)
         var session = NSURLSession.sharedSession()
@@ -90,6 +78,8 @@ class ViewController: UIViewController {
     
     func getResultsFromServerWithValues(NSArray) {
         DataManager.getDataFromServerWithSuccess { (ServerData) -> Void in
+            let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC * 2))
+            dispatch_after(delayTime, dispatch_get_main_queue()){
             let json = JSON(data: ServerData)
             
            // println(json)
@@ -103,7 +93,48 @@ class ViewController: UIViewController {
                     self.resultGeoLocs.append(appName)
                 }
             }
+            
+            println("Got cities : \(self.resultCities)")
+            println("Got geolocs : \(self.resultGeoLocs)")
+            
+
+            
+            NSUserDefaults.standardUserDefaults().setObject(self.resultCities, forKey:"cities")
+            NSUserDefaults.standardUserDefaults().setObject(self.resultGeoLocs, forKey:"geolocs")
+            NSUserDefaults.standardUserDefaults().synchronize()
+            }
         }
+    }
+    
+    func getResultsFromFileWithValues(NSArray) {
+        DataManager.getTopAppsDataFromFileWithSuccess { (FileData) -> Void in
+            let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC * 5))
+            dispatch_after(delayTime, dispatch_get_main_queue()){
+                let json = JSON(data: FileData)
+                
+                // println(json)
+                
+                for (key: String, subJson: JSON) in json {
+                    if let appName = json[key.toInt()!]["name"].stringValue as String? {
+                        self.resultCities.append(appName)
+                    }
+                    
+                    if let appName = json[key.toInt()!]["geo"].stringValue as String? {
+                        self.resultGeoLocs.append(appName)
+                    }
+                }
+                
+                println("Got cities : \(self.resultCities)")
+                println("Got geolocs : \(self.resultGeoLocs)")
+                
+                
+                
+                NSUserDefaults.standardUserDefaults().setObject(self.resultCities, forKey:"cities")
+                NSUserDefaults.standardUserDefaults().setObject(self.resultGeoLocs, forKey:"geolocs")
+                NSUserDefaults.standardUserDefaults().synchronize()
+            }
+        }
+
     }
     
     override func viewDidLoad() {

@@ -12,6 +12,7 @@ import MapKit
 class ResultsViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var navBar: UINavigationBar!
     
     var avgLoc : CLLocationCoordinate2D!
     var cities : Array<String!> = []
@@ -22,7 +23,15 @@ class ResultsViewController : UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        var addStatusBar = UIView()
+        
+        addStatusBar.frame = CGRectMake(0, 0, 320, 20);
+        
+        addStatusBar.backgroundColor = UIColor(red: 247, green: 247, blue: 247, alpha: 1)
+        
+        self.view.addSubview(addStatusBar)
+        
         cities = NSUserDefaults.standardUserDefaults().objectForKey("cities") as Array<String!>
         geoLocs = NSUserDefaults.standardUserDefaults().objectForKey("geolocs") as Array<String!>
         
@@ -34,6 +43,8 @@ class ResultsViewController : UIViewController, UITableViewDelegate, UITableView
         geoLocsCoords = [];
         
         convertGeoLocs()
+        
+        initialiseMap()
         
         println(geoLocsCoords);
     }
@@ -67,58 +78,53 @@ class ResultsViewController : UIViewController, UITableViewDelegate, UITableView
     }
     
     func initialiseMap() {
+        var geoLocCL : Array<CLLocationCoordinate2D> = []
         
-//        for var i : Int = 0 ; i < cities.count; i++ {
-//            cities[i]
-//        }
+        let (lat, long) = geoLocsCoords[0]
         
-        var location1 = CLLocationCoordinate2D(
-            latitude: 10,
-            longitude: 10
-        )
+        var loc = CLLocationCoordinate2D(latitude: lat, longitude: long)
         
-        var location2 = CLLocationCoordinate2D(
-            latitude: 0,
-            longitude: 0
-        )
+        var topAnnot = putPinAt(loc, i: 0)
         
-        var location3 = CLLocationCoordinate2D(
-            latitude: -60,
-            longitude: 35
-        )
+        geoLocCL.append(loc)
         
-        calculateAvg([location1, location2, location3])
+        for var i : Int = 1 ; i < cities.count; i++ {
+            
+            let (lat, long) = geoLocsCoords[i]
+            
+            var loc = CLLocationCoordinate2D(latitude: lat, longitude: long)
+            
+            putPinAt(loc, i: i)
+            
+            geoLocCL.append(loc)
+        }
         
-        var span1 : MKCoordinateSpan = MKCoordinateSpanMake(100, 100)
+        var span : MKCoordinateSpan = MKCoordinateSpanMake(2, 2)
         
-        var region1 = MKCoordinateRegion(center: avgLoc, span: span1 )
+        var region = MKCoordinateRegion(center: geoLocCL[0], span: span )
         
-        mapView.setRegion(region1, animated: true)
+        mapView.setRegion(region, animated: true)
         
-        var annotation1 = MKPointAnnotation()
-        annotation1.setCoordinate(location1)
-        annotation1.title = "Roatan"
-        annotation1.subtitle = "Honduras"
+        mapView.selectAnnotation(topAnnot, animated: true)
         
-        mapView.addAnnotation(annotation1)
+        println("Geo \(geoLocCL)")
+    }
+    
+    func putPinAt(loc : CLLocationCoordinate2D, i : Int) -> MKPointAnnotation {
+        var annotation = MKPointAnnotation()
         
-        var region2 = MKCoordinateRegion(center: avgLoc, span: span1)
+        annotation.setCoordinate(loc)
+        annotation.title = cities[i]
         
-        mapView.setRegion(region2, animated: true)
+        if (i == 0) {
+            annotation.subtitle = "Top Result"
+        } else {
+            annotation.subtitle = "Result \(i + 1)"
+        }
         
-        var annotation2 = MKPointAnnotation()
-        annotation2.setCoordinate(location2)
-        annotation2.title = "Roatan"
-        annotation2.subtitle = "Honduras"
+        mapView.addAnnotation(annotation)
         
-        mapView.addAnnotation(annotation2)
-        
-        var annotation3 = MKPointAnnotation()
-        annotation3.setCoordinate(location3)
-        annotation3.title = "Roatan"
-        annotation3.subtitle = "Honduras"
-        
-        mapView.addAnnotation(annotation3)
+        return annotation
     }
 
     
@@ -134,7 +140,20 @@ class ResultsViewController : UIViewController, UITableViewDelegate, UITableView
         let cell = tableView.dequeueReusableCellWithIdentifier("protoCell", forIndexPath: indexPath) as UITableViewCell
         
         cell.textLabel?.text = self.cities[indexPath.row]
-        cell.imageView?.image = UIImage(named: (String(indexPath.row + 1)) + "circle.png")
+        
+        let image : UIImage! = UIImage(named: (String(indexPath.row + 1)) + "circle.png")
+        
+        let size = CGSizeApplyAffineTransform(image.size, CGAffineTransformMakeScale(0.15, 0.15))
+        let hasAlpha = false
+        let scale: CGFloat = 0.0 // Automatically use scale factor of main screen
+        
+        UIGraphicsBeginImageContextWithOptions(size, hasAlpha, scale)
+        image.drawInRect(CGRect(origin: CGPointZero, size: size))
+        
+        let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        cell.imageView?.image = scaledImage
         
         return cell
     }
@@ -151,9 +170,16 @@ class ResultsViewController : UIViewController, UITableViewDelegate, UITableView
         
         var focusLoc : CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: lat, longitude: long)
         
-        var region1 = MKCoordinateRegion(center: focusLoc, span: MKCoordinateSpanMake(50, 50))
+        var region1 = MKCoordinateRegion(center: focusLoc, span: MKCoordinateSpanMake(2, 2))
         
         mapView.setRegion(region1, animated: true)
+        
+        var loc = CLLocationCoordinate2D(latitude: lat, longitude: long)
+        
+        var annot = MKPointAnnotation()
+        annot.setCoordinate(loc)
+        
+        mapView.selectAnnotation(annot, animated: true)
         
     }
     
