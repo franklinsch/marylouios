@@ -28,9 +28,9 @@ class ViewController: UIViewController {
         
         // doHTTPPost()
         
-        //getResultsFromServerWithValues(values)
+        getResultsFromServerWithValues(values)
 
-        getResultsFromFileWithValues(values)
+        //getResultsFromFileWithValues(values)
         
     }
     
@@ -86,8 +86,8 @@ class ViewController: UIViewController {
     
     func getResultsFromServerWithValues(NSArray) {
         DataManager.getDataFromServerWithSuccess { (ServerData) -> Void in
-            let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC * 2))
-            dispatch_after(delayTime, dispatch_get_main_queue()){
+//            let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC * 2))
+  //          dispatch_after(delayTime, dispatch_get_main_queue()){
             let json = JSON(data: ServerData)
             
            // println(json)
@@ -100,7 +100,7 @@ class ViewController: UIViewController {
                 if let appName = json[key.toInt()!]["geo"].stringValue as String? {
                     self.resultGeoLocs.append(appName)
                 }
-            }
+    //        }
             
             println("Got cities : \(self.resultCities)")
             println("Got geolocs : \(self.resultGeoLocs)")
@@ -148,6 +148,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
 
     }
     

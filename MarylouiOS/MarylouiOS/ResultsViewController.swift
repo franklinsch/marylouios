@@ -19,10 +19,31 @@ class ResultsViewController : UIViewController, UITableViewDelegate, UITableView
     var geoLocs : Array<String!> = []
     var geoLocsCoords : Array<(Double!, Double!)> = []
     
+    @IBOutlet weak var cityName: UILabel!
+    
     @IBOutlet weak var tableView: UITableView!
+    
+    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+        
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            
+            switch swipeGesture.direction {
+            case UISwipeGestureRecognizerDirection.Right:
+                println("Swiped right")
+            case UISwipeGestureRecognizerDirection.Down:
+                println("Swiped down")
+            default:
+                break
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
+        self.view.addGestureRecognizer(swipeRight)
         
         var addStatusBar = UIView()
         
@@ -31,7 +52,7 @@ class ResultsViewController : UIViewController, UITableViewDelegate, UITableView
         addStatusBar.backgroundColor = UIColor(red: 247, green: 247, blue: 247, alpha: 1)
         
         self.view.addSubview(addStatusBar)
-        
+                
         cities = NSUserDefaults.standardUserDefaults().objectForKey("cities") as Array<String!>
         geoLocs = NSUserDefaults.standardUserDefaults().objectForKey("geolocs") as Array<String!>
         
@@ -98,6 +119,8 @@ class ResultsViewController : UIViewController, UITableViewDelegate, UITableView
             
             geoLocCL.append(loc)
         }
+        
+        cityName.text = cities[0]
         
         var span : MKCoordinateSpan = MKCoordinateSpanMake(2, 2)
         
@@ -178,10 +201,10 @@ class ResultsViewController : UIViewController, UITableViewDelegate, UITableView
         //mapView.selectAnnotation(annot, animated: true)
 
         mapView.setRegion(region1, animated: true)
-
         
+        self.cityName.text = cities[index]
     }
-    
+
     func processLocs(s : String) -> (Double!, Double!) {
         println(s)
         

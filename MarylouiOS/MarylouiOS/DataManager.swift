@@ -9,7 +9,7 @@
 
 import Foundation
 
-let TopAppURL = "http://www.freddielindsey.me:3000/testjson"
+let TopAppURL = "http://www.freddielindsey.me:3000/getcities"
 
 class DataManager {
     

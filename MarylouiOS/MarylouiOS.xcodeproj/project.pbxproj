@@ -14,12 +14,13 @@
 		250EB6251A873A5400FAF7FC /* MKLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250EB61E1A873A5400FAF7FC /* MKLayer.swift */; };
 		250EB6261A873A5400FAF7FC /* MKTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250EB61F1A873A5400FAF7FC /* MKTableViewCell.swift */; };
 		250EB6271A873A5400FAF7FC /* MKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250EB6201A873A5400FAF7FC /* MKTextField.swift */; };
+		253588061A87760F0075A3B9 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 253588051A87760F0075A3B9 /* Launch Screen.xib */; };
+		253588081A8776930075A3B9 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 253588071A8776930075A3B9 /* splash.png */; };
 		256591651A8635E5006D4E22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256591641A8635E5006D4E22 /* AppDelegate.swift */; };
 		256591681A8635E5006D4E22 /* MarylouiOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 256591661A8635E5006D4E22 /* MarylouiOS.xcdatamodeld */; };
 		2565916A1A8635E5006D4E22 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256591691A8635E5006D4E22 /* HomeViewController.swift */; };
 		2565916D1A8635E5006D4E22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2565916B1A8635E5006D4E22 /* Main.storyboard */; };
 		2565916F1A8635E5006D4E22 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2565916E1A8635E5006D4E22 /* Images.xcassets */; };
-		256591721A8635E5006D4E22 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 256591701A8635E5006D4E22 /* LaunchScreen.xib */; };
 		2565917E1A8635E5006D4E22 /* MarylouiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565917D1A8635E5006D4E22 /* MarylouiOSTests.swift */; };
 		256591E51A86526D006D4E22 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256591E41A86526D006D4E22 /* DataManager.swift */; };
 		256591EA1A865706006D4E22 /* SampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = 256591E91A865706006D4E22 /* SampleData.json */; };
@@ -55,6 +56,8 @@
 		250EB61E1A873A5400FAF7FC /* MKLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKLayer.swift; sourceTree = "<group>"; };
 		250EB61F1A873A5400FAF7FC /* MKTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKTableViewCell.swift; sourceTree = "<group>"; };
 		250EB6201A873A5400FAF7FC /* MKTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKTextField.swift; sourceTree = "<group>"; };
+		253588051A87760F0075A3B9 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "Launch Screen.xib"; path = "../Launch Screen.xib"; sourceTree = "<group>"; };
+		253588071A8776930075A3B9 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		2565915F1A8635E5006D4E22 /* MarylouiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarylouiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		256591631A8635E5006D4E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		256591641A8635E5006D4E22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +65,6 @@
 		256591691A8635E5006D4E22 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2565916C1A8635E5006D4E22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2565916E1A8635E5006D4E22 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		256591711A8635E5006D4E22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		256591771A8635E5006D4E22 /* MarylouiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarylouiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2565917C1A8635E5006D4E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2565917D1A8635E5006D4E22 /* MarylouiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarylouiOSTests.swift; sourceTree = "<group>"; };
@@ -142,9 +144,10 @@
 				256591E61A865275006D4E22 /* Views */,
 				256591641A8635E5006D4E22 /* AppDelegate.swift */,
 				2565916B1A8635E5006D4E22 /* Main.storyboard */,
+				253588051A87760F0075A3B9 /* Launch Screen.xib */,
 				2565916E1A8635E5006D4E22 /* Images.xcassets */,
-				256591701A8635E5006D4E22 /* LaunchScreen.xib */,
 				256591661A8635E5006D4E22 /* MarylouiOS.xcdatamodeld */,
+				253588071A8776930075A3B9 /* splash.png */,
 				256591621A8635E5006D4E22 /* Supporting Files */,
 			);
 			path = MarylouiOS;
@@ -301,9 +304,10 @@
 				258F58B91A86F2D900A7D486 /* 10circle.png in Resources */,
 				258F58BD1A86F2D900A7D486 /* 6circle.png in Resources */,
 				2565916D1A8635E5006D4E22 /* Main.storyboard in Resources */,
-				256591721A8635E5006D4E22 /* LaunchScreen.xib in Resources */,
 				2565916F1A8635E5006D4E22 /* Images.xcassets in Resources */,
+				253588081A8776930075A3B9 /* splash.png in Resources */,
 				256591EA1A865706006D4E22 /* SampleData.json in Resources */,
+				253588061A87760F0075A3B9 /* Launch Screen.xib in Resources */,
 				258F58BA1A86F2D900A7D486 /* 9circle.png in Resources */,
 				258F58BE1A86F2D900A7D486 /* 5circle.png in Resources */,
 				258F58BB1A86F2D900A7D486 /* 8circle.png in Resources */,
@@ -370,14 +374,6 @@
 				2565916C1A8635E5006D4E22 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		256591701A8635E5006D4E22 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				256591711A8635E5006D4E22 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -468,7 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MarylouiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MarylouiOS;
 			};
 			name = Debug;
 		};
@@ -478,7 +474,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MarylouiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MarylouiOS;
 			};
 			name = Release;
 		};
@@ -496,7 +492,7 @@
 				);
 				INFOPLIST_FILE = MarylouiOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MarylouiOSTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarylouiOS.app/MarylouiOS";
 			};
 			name = Debug;
@@ -511,7 +507,7 @@
 				);
 				INFOPLIST_FILE = MarylouiOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MarylouiOSTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarylouiOS.app/MarylouiOS";
 			};
 			name = Release;
