@@ -8,25 +8,22 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
     @IBOutlet weak var safetyField: UITextField!
     @IBOutlet weak var priceField: UITextField!
     @IBOutlet weak var weatherField: UITextField!
+    @IBOutlet weak var safetyView: UIView!
     
     @IBOutlet weak var resultLabel: UILabel!
     
     var resultCities : Array<String!> = []
     var resultGeoLocs : Array<String!> = []
-
-    @IBOutlet weak var safetyView: UIView!
     
     @IBAction func search(sender: AnyObject) {
         var values : NSArray = [safetyField.text, priceField.text, weatherField.text]
         
-        let button = MKButton(frame: CGRect(x: 10, y: 10, width: 100, height: 35))
-        button.maskEnabled = true
-        button.rippleLocation = .TapLocation
-        button.circleLayerColor = UIColor.MKColor.LightGreen
         //println("Getting cities with values \(values)")
         
         // doHTTPPost()
