@@ -28,10 +28,14 @@ class ViewController: UIViewController {
         
         // doHTTPPost()
         
-        getResultsFromServerWithValues(values)
+        //getResultsFromServerWithValues(values)
 
-        //getResultsFromFileWithValues(values)
+        getResultsFromFileWithValues(values)
         
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
     
     @IBOutlet weak var tableview: UITableView!
