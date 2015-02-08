@@ -23,6 +23,10 @@ class ViewController: UIViewController {
     @IBAction func search(sender: AnyObject) {
         var values : NSArray = [safetyField.text, priceField.text, weatherField.text]
         
+        let button = MKButton(frame: CGRect(x: 10, y: 10, width: 100, height: 35))
+        button.maskEnabled = true
+        button.rippleLocation = .TapLocation
+        button.circleLayerColor = UIColor.MKColor.LightGreen
         //println("Getting cities with values \(values)")
         
         // doHTTPPost()
@@ -30,6 +34,7 @@ class ViewController: UIViewController {
         getResultsFromServerWithValues(values)
 
         //getResultsFromFileWithValues(values)
+        
     }
     
     func doHTTPPost() {

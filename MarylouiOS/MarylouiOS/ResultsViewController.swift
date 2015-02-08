@@ -172,14 +172,13 @@ class ResultsViewController : UIViewController, UITableViewDelegate, UITableView
         
         var region1 = MKCoordinateRegion(center: focusLoc, span: MKCoordinateSpanMake(2, 2))
         
-        mapView.setRegion(region1, animated: true)
-        
-        var loc = CLLocationCoordinate2D(latitude: lat, longitude: long)
-        
         var annot = MKPointAnnotation()
-        annot.setCoordinate(loc)
+        annot.setCoordinate(focusLoc)
         
-        mapView.selectAnnotation(annot, animated: true)
+        //mapView.selectAnnotation(annot, animated: true)
+
+        mapView.setRegion(region1, animated: true)
+
         
     }
     
