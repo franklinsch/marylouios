@@ -9,22 +9,39 @@
 import UIKit
 import MapKit
 
-class ResultsViewController : UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ResultsViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var mapView: MKMapView!
     
     var avgLoc : CLLocationCoordinate2D!
-    var cities : NSArray! = []
-    var geoLocs : NSArray! = []
+    var cities : Array<String!> = []
+    var geoLocs : Array<String!> = []
+    var geoLocsCoords : Array<(Double!, Double!)> = []
+    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        cities = NSUserDefaults.standardUserDefaults().objectForKey("cities") as NSArray!
-        geoLocs = NSUserDefaults.standardUserDefaults().objectForKey("geolocs") as NSArray!
+        cities = NSUserDefaults.standardUserDefaults().objectForKey("cities") as Array<String!>
+        geoLocs = NSUserDefaults.standardUserDefaults().objectForKey("geolocs") as Array<String!>
         
         println("Fetched \(cities)")
         println("Fetched \(geoLocs)")
+        
+        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "protoCell")
+        
+        geoLocsCoords = [];
+        
+        convertGeoLocs()
+        
+        println(geoLocsCoords);
+    }
+    
+    func convertGeoLocs() {
+        for var i : Int = 0 ; i < geoLocs.count ; i++ {
+            geoLocsCoords.append(processLocs(geoLocs[i]))
+        }
     }
     
     func calculateAvg(locations : Array<CLLocationCoordinate2D>) {
@@ -42,23 +59,18 @@ class ResultsViewController : UIViewController, UITableViewDataSource, UITableVi
         avgX /= length
         avgY /= length
         
-        println(avgX)
-        println(avgY)
-        
         var newX  : CLLocationDegrees = CLLocationDegrees(avgX)
         var newY : CLLocationDegrees = CLLocationDegrees(avgY)
-
-        println(newX)
-        println(newY)
         
         self.avgLoc = CLLocationCoordinate2D(latitude: newX, longitude: newY)
+
     }
     
     func initialiseMap() {
         
-        for var i : Int = 0 ; i < cities.count; i++ {
-            cities[i]
-        }
+//        for var i : Int = 0 ; i < cities.count; i++ {
+//            cities[i]
+//        }
         
         var location1 = CLLocationCoordinate2D(
             latitude: 10,
@@ -108,6 +120,7 @@ class ResultsViewController : UIViewController, UITableViewDataSource, UITableVi
         
         mapView.addAnnotation(annotation3)
     }
+
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -120,15 +133,74 @@ class ResultsViewController : UIViewController, UITableViewDataSource, UITableVi
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("protoCell", forIndexPath: indexPath) as UITableViewCell
         
-        cell.textLabel?.text = "test"
+        cell.textLabel?.text = self.cities[indexPath.row]
+        cell.imageView?.image = UIImage(named: (String(indexPath.row + 1)) + "circle.png")
         
         return cell
     }
-
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var selectedIndexPath : NSIndexPath = tableView.indexPathForSelectedRow()!
+        
+        updateMapWithFocusOn(selectedIndexPath.row)
+    }
+    
+    func updateMapWithFocusOn(index : Int) {
+        
+        let (lat,long) = geoLocsCoords[index]
+        
+        var focusLoc : CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: lat, longitude: long)
+        
+        var region1 = MKCoordinateRegion(center: focusLoc, span: MKCoordinateSpanMake(50, 50))
+        
+        mapView.setRegion(region1, animated: true)
+        
+    }
+    
+    func processLocs(s : String) -> (Double!, Double!) {
+        println(s)
+        
+        var tmpLat : String  = ""
+        var tmpLong : String = ""
+        var lat : Double = 0
+        var long : Double = 0
+        
+        for var i : Int = 0 ; i < countElements(s) ; i++ {
+            if (s[i] == ",") {
+                lat = (tmpLat as NSString).doubleValue
+                tmpLong = "";
+                continue
+            }
+            
+            tmpLat += s[i]
+            tmpLong += s[i]
+        }
+        
+        long = (tmpLong as NSString).doubleValue
+        
+        return (lat, long)
+    }
+    
+  
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-
 }
+
+extension String {
+    
+    subscript (i: Int) -> Character {
+        return self[advance(self.startIndex, i)]
+    }
+    
+    subscript (i: Int) -> String {
+        return String(self[i] as Character)
+    }
+    
+    subscript (r: Range<Int>) -> String {
+        return substringWithRange(Range(start: advance(startIndex, r.startIndex), end: advance(startIndex, r.endIndex)))
+    }
+}
+

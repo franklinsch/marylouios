@@ -25,7 +25,11 @@ class ViewController: UIViewController {
         
         println("Getting cities with values \(values)")
         
+       // doHTTPPost()
+        
         getResultsFromServerWithValues(values)
+        
+
         
         let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC * 1))
         dispatch_after(delayTime, dispatch_get_main_queue()){
@@ -34,16 +38,62 @@ class ViewController: UIViewController {
             
             NSUserDefaults.standardUserDefaults().setObject(self.resultCities, forKey:"cities")
             NSUserDefaults.standardUserDefaults().setObject(self.resultGeoLocs, forKey:"geolocs")
-
             NSUserDefaults.standardUserDefaults().synchronize()
             
         }
     }
     
 
+    func doHTTPPost() {
+        var request = NSMutableURLRequest(URL: NSURL(string: "http://www.freddielindsey.me:3000/testjson")!)
+        var session = NSURLSession.sharedSession()
+        request.HTTPMethod = "POST"
+        
+        var params = ["slevel":"I", "plevel" : "like", "wlevel" : "pie"] as Dictionary<String, String>
+        
+        var err: NSError?
+        request.HTTPBody = NSJSONSerialization.dataWithJSONObject(params, options: nil, error: &err)
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        
+        var task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
+            //println("Response: \(response)")
+            var strData = NSString(data: data, encoding: NSUTF8StringEncoding)
+           // println("Body: \(strData)")
+            var err: NSError?
+            var json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableLeaves, error: &err) as? NSDictionary
+            
+            // Did the JSONObjectWithData constructor return an error? If so, log the error to the console
+            if(err != nil) {
+                println(err!.localizedDescription)
+                let jsonStr = NSString(data: data, encoding: NSUTF8StringEncoding)
+                //println("Error could not parse JSON: '\(jsonStr)'")
+            }
+            else {
+                // The JSONObjectWithData constructor didn't return an error. But, we should still
+                // check and make sure that json has a value using optional binding.
+                if let parseJSON = json {
+                    // Okay, the parsedJSON is here, let's get the value for 'success' out of it
+                    var success = parseJSON["success"] as? Int
+                    println("Succes: \(success)")
+                }
+                else {
+                    // Woa, okay the json object was nil, something went worng. Maybe the server isn't running?
+                    let jsonStr = NSString(data: data, encoding: NSUTF8StringEncoding)
+                    println("Error could not parse JSON: \(jsonStr)")
+                }
+            }
+        })
+        
+        task.resume()
+    }
+    
     func getResultsFromServerWithValues(NSArray) {
         DataManager.getDataFromServerWithSuccess { (ServerData) -> Void in
             let json = JSON(data: ServerData)
+            
+           // println(json)
+
             for (key: String, subJson: JSON) in json {
                 if let appName = json[key.toInt()!]["name"].stringValue as String? {
                     self.resultCities.append(appName)
