@@ -34,6 +34,8 @@ class ViewController: UIViewController {
         
     }
     
+    @IBOutlet weak var tableview: UITableView!
+    
     func doHTTPPost() {
         var request = NSMutableURLRequest(URL: NSURL(string: "http://www.freddielindsey.me:3000/testjson")!)
         var session = NSURLSession.sharedSession()
