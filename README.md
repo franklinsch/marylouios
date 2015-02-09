@@ -1,5 +1,5 @@
 # Marylou iOS
-Created by Franklin Schrans, Freddie Lindsey, Amin Karamlou in the context of the IC HACK 15' hackathon.
+Created by Franklin Schrans (iOS developer), Freddie Lindsey, Amin Karamlou (both back-end) in the context of the IC HACK 15' hackathon.
 
 This is the backend implementation, used to crunch the data sent by the iOS app ([see repo here](https://github.com/franklinsch/marylouios))
 
