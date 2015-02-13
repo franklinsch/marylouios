@@ -31,6 +31,7 @@ class DataManager {
     class func loadDataFromURL(url: NSURL, completion:(data: NSData?, error: NSError?) -> Void) {
         var session = NSURLSession.sharedSession()
         
+        
         // Use NSURLSession to get data from an NSURL
         let loadDataTask = session.dataTaskWithURL(url, completionHandler: { (data: NSData!, response: NSURLResponse!, error: NSError!) -> Void in
             if let responseError = error {
@@ -50,9 +51,13 @@ class DataManager {
     
     class func getDataFromServerWithSuccess(success: ((ServerData: NSData!) -> Void)) {
         loadDataFromURL(NSURL(string: TopAppURL)!, completion:{(data, error) -> Void in
+            println("here")
+
             if let urlData = data {
                 success(ServerData: urlData)
             }
+
+            println("Data \(data)")
         })
     }
     

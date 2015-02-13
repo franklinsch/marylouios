@@ -23,21 +23,6 @@ class ResultsViewController : UIViewController, UITableViewDelegate, UITableView
     
     @IBOutlet weak var tableView: UITableView!
     
-    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
-        
-        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
-            
-            switch swipeGesture.direction {
-            case UISwipeGestureRecognizerDirection.Right:
-                println("Swiped right")
-            case UISwipeGestureRecognizerDirection.Down:
-                println("Swiped down")
-            default:
-                break
-            }
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -52,7 +37,9 @@ class ResultsViewController : UIViewController, UITableViewDelegate, UITableView
         addStatusBar.backgroundColor = UIColor(red: 247, green: 247, blue: 247, alpha: 1)
         
         self.view.addSubview(addStatusBar)
-                
+        
+        sleep(10)
+        
         cities = NSUserDefaults.standardUserDefaults().objectForKey("cities") as Array<String!>
         geoLocs = NSUserDefaults.standardUserDefaults().objectForKey("geolocs") as Array<String!>
         
@@ -188,7 +175,6 @@ class ResultsViewController : UIViewController, UITableViewDelegate, UITableView
     }
     
     func updateMapWithFocusOn(index : Int) {
-        
         let (lat,long) = geoLocsCoords[index]
         
         var focusLoc : CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: lat, longitude: long)

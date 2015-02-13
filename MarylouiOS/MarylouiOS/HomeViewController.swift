@@ -22,16 +22,7 @@ class ViewController: UIViewController {
     var resultGeoLocs : Array<String!> = []
     
     @IBAction func search(sender: AnyObject) {
-        var values : NSArray = [safetyField.text, priceField.text, weatherField.text]
-        
-        //println("Getting cities with values \(values)")
-        
-        // doHTTPPost()
-        
-        getResultsFromServerWithValues(values)
-
-        //getResultsFromFileWithValues(values)
-        
+        getResultsFromServer()        
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
@@ -41,7 +32,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableview: UITableView!
     
     func doHTTPPost() {
-        var request = NSMutableURLRequest(URL: NSURL(string: "http://www.freddielindsey.me:3000/testjson")!)
+        var request = NSMutableURLRequest(URL: NSURL(string: "http://www.freddielindsey.me:3000/getcities")!)
         var session = NSURLSession.sharedSession()
         request.HTTPMethod = "POST"
         
@@ -53,28 +44,19 @@ class ViewController: UIViewController {
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         
         var task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
-            //println("Response: \(response)")
             var strData = NSString(data: data, encoding: NSUTF8StringEncoding)
-           // println("Body: \(strData)")
             var err: NSError?
             var json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableLeaves, error: &err) as? NSDictionary
-            
-            // Did the JSONObjectWithData constructor return an error? If so, log the error to the console
             if(err != nil) {
                 println(err!.localizedDescription)
                 let jsonStr = NSString(data: data, encoding: NSUTF8StringEncoding)
-                //println("Error could not parse JSON: '\(jsonStr)'")
             }
             else {
-                // The JSONObjectWithData constructor didn't return an error. But, we should still
-                // check and make sure that json has a value using optional binding.
                 if let parseJSON = json {
-                    // Okay, the parsedJSON is here, let's get the value for 'success' out of it
                     var success = parseJSON["success"] as? Int
                     println("Succes: \(success)")
                 }
                 else {
-                    // Woa, okay the json object was nil, something went worng. Maybe the server isn't running?
                     let jsonStr = NSString(data: data, encoding: NSUTF8StringEncoding)
                     println("Error could not parse JSON: \(jsonStr)")
                 }
@@ -84,43 +66,11 @@ class ViewController: UIViewController {
         task.resume()
     }
     
-    func getResultsFromServerWithValues(NSArray) {
+    func getResultsFromServer() {
         DataManager.getDataFromServerWithSuccess { (ServerData) -> Void in
-//            let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC * 2))
-  //          dispatch_after(delayTime, dispatch_get_main_queue()){
-            let json = JSON(data: ServerData)
-            
-           // println(json)
-
-            for (key: String, subJson: JSON) in json {
-                if let appName = json[key.toInt()!]["name"].stringValue as String? {
-                    self.resultCities.append(appName)
-                }
+                let json = JSON(data: ServerData)
                 
-                if let appName = json[key.toInt()!]["geo"].stringValue as String? {
-                    self.resultGeoLocs.append(appName)
-                }
-    //        }
-            
-            println("Got cities : \(self.resultCities)")
-            println("Got geolocs : \(self.resultGeoLocs)")
-            
-
-            
-            NSUserDefaults.standardUserDefaults().setObject(self.resultCities, forKey:"cities")
-            NSUserDefaults.standardUserDefaults().setObject(self.resultGeoLocs, forKey:"geolocs")
-            NSUserDefaults.standardUserDefaults().synchronize()
-            }
-        }
-    }
-    
-    func getResultsFromFileWithValues(NSArray) {
-        DataManager.getTopAppsDataFromFileWithSuccess { (FileData) -> Void in
-            let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC * 5))
-            dispatch_after(delayTime, dispatch_get_main_queue()){
-                let json = JSON(data: FileData)
-                
-                // println(json)
+                 println("json \(json)")
                 
                 for (key: String, subJson: JSON) in json {
                     if let appName = json[key.toInt()!]["name"].stringValue as String? {
@@ -140,17 +90,42 @@ class ViewController: UIViewController {
                 NSUserDefaults.standardUserDefaults().setObject(self.resultCities, forKey:"cities")
                 NSUserDefaults.standardUserDefaults().setObject(self.resultGeoLocs, forKey:"geolocs")
                 NSUserDefaults.standardUserDefaults().synchronize()
+        }
+    }
+    func getResultsFromFileWithValues(NSArray) {
+        DataManager.getTopAppsDataFromFileWithSuccess { (FileData) -> Void in
+                
+                //≈
+            
+                sleep(10);
+                
+                let json = JSON(data: FileData)
+                
+                // println(json)
+                
+                for (key: String, subJson: JSON) in json {
+                    if let appName = json[key.toInt()!]["name"].stringValue as String? {
+                        self.resultCities.append(appName)
+                    }
+                    
+                    if let appName = json[key.toInt()!]["geo"].stringValue as String? {
+                        self.resultGeoLocs.append(appName)
+                    }
+                }
+                
+                println("Got cities : \(self.resultCities)")
+                println("Got geolocs : \(self.resultGeoLocs)")
+                
+                NSUserDefaults.standardUserDefaults().setObject(self.resultCities, forKey:"cities")
+                NSUserDefaults.standardUserDefaults().setObject(self.resultGeoLocs, forKey:"geolocs")
+                NSUserDefaults.standardUserDefaults().synchronize()
             }
         }
 
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
-
     }
     
     override func didReceiveMemoryWarning() {

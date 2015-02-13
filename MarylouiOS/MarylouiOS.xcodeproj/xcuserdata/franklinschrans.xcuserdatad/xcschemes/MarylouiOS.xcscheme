@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2565915E1A8635E5006D4E22"
-               BuildableName = "Precisely.app"
+               BuildableName = "MarylouiOS.app"
                BlueprintName = "MarylouiOS"
                ReferencedContainer = "container:MarylouiOS.xcodeproj">
             </BuildableReference>
@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "256591761A8635E5006D4E22"
-               BuildableName = "PreciselyTests.xctest"
+               BuildableName = "MarylouiOSTests.xctest"
                BlueprintName = "MarylouiOSTests"
                ReferencedContainer = "container:MarylouiOS.xcodeproj">
             </BuildableReference>
@@ -47,7 +47,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "256591761A8635E5006D4E22"
-               BuildableName = "PreciselyTests.xctest"
+               BuildableName = "MarylouiOSTests.xctest"
                BlueprintName = "MarylouiOSTests"
                ReferencedContainer = "container:MarylouiOS.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2565915E1A8635E5006D4E22"
-            BuildableName = "Precisely.app"
+            BuildableName = "MarylouiOS.app"
             BlueprintName = "MarylouiOS"
             ReferencedContainer = "container:MarylouiOS.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2565915E1A8635E5006D4E22"
-            BuildableName = "Precisely.app"
+            BuildableName = "MarylouiOS.app"
             BlueprintName = "MarylouiOS"
             ReferencedContainer = "container:MarylouiOS.xcodeproj">
          </BuildableReference>
@@ -94,7 +94,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2565915E1A8635E5006D4E22"
-            BuildableName = "Precisely.app"
+            BuildableName = "MarylouiOS.app"
             BlueprintName = "MarylouiOS"
             ReferencedContainer = "container:MarylouiOS.xcodeproj">
          </BuildableReference>
